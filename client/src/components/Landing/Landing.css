@@ -1,0 +1,26 @@
+.secondLanding {
+  min-height: 100vh;
+  background: #ffc5f6;
+}
+
+
+.LandingFirstPart {
+  min-height: 90vh;
+}
+
+.preview-container {
+  margin-right: calc(-15vw);
+  width: 55vw; 
+  overflow-x: hidden;
+  border-radius: 20px;
+}
+
+.preview-image {
+  width: 100%;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, .9) 40%, rgba(0, 0, 0, .6) 60%, rgba(0, 0, 0, 0));
+  border-radius: 20px; 
+  border-color: black;
+  border-width: 2px;
+  overflow-x: hidden;
+}
+

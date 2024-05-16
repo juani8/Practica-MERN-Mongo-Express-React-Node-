@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    font-family: 'Poppins', sans-serif;
+}
+
+.html {
+    margin: 0;
+}
+
+.poppins {
+    font-family: 'Poppins' !important;
+}
+
+.bg_default {
+	@apply bg-gradient-to-r from-purple-500 to-pink-500;
+}
+
+
+.bg_red {
+    @apply bg-red-500;
+}
+
+.popup__item {
+	@apply flex gap-3 items-center border-gray-300 
+	py-3 px-4 font-medium cursor-pointer;
+}
+
+
+.logo-img {
+    filter: invert(1);
+}
+
+.myprofile__button__container {
+    @apply flex justify-around grow flex-col items-center gap-6 py-6 mt-6;
+}
+
+.myprofile__button {
+    @apply w-[50%] max-w-[550px] inline-flex gap-2 p-2 min-w-[240px] font-medium text-white
+    rounded-xl border-black border-2 items-center justify-around grow
+    hover:bg-violet-600;
+}
+
+.myprofile__subpages {
+    @apply font-medium px-4 py-4 flex rounded-lg bg-gray-200 self-center max-[600px]:min-w-[200px];
+}
+
+.myprofile__subpages>img {
+    @apply w-[20px] pr-1
+}
+
+.myprofile__stn {
+    @apply flex grow items-center justify-around flex-col;
+}
+
+.myprofile__stn__opt {
+    @apply underline rounded-sm m-3 cursor-pointer;
+}
+
+.mainbackground {
+    /*background: radial-gradient(circle at 100% 100%, rgba(16, 32, 153, 1) 0%, rgba(33, 39, 113, 1) 46%, rgba(16, 16, 79, 1) 100%);*/
+    background: radial-gradient(ellipse at 70% 100%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 52%, rgba(110, 27, 110, 1) 100%);
+}
+
+.secondarybackground {
+    background: linear-gradient(to right, #ad5389, #3c1053);
+    color: black !important;
+}
+
+.myprofile__stn__input__cntr {
+    @apply flex justify-between items-center mx-3 py-2 gap-x-8 max-[500px]:flex-col;
+}
+
+
+.myprofile__stn__input__cntr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 .75rem;
+    padding: .5rem 0;
+    column-gap: 2rem    
+}
+
+@media (max-width: 500px) {
+    .myprofile__stn__input__cntr {
+        flex-direction: column;
+    }
+}
+
+
+.myprofile__stn__input__cntr__btn {
+    @apply w-full rounded-xl py-2 font-normal mt-4 
+    cursor-pointer justify-center flex grow;
+}
+
+.input__default {
+    @apply focus:outline-none p-2 border border-gray-400 rounded-md
+} 
+
